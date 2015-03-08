@@ -53,6 +53,7 @@ local function getLabelUpdater(self)
 				local avrFps = avrElement(lastFps)
                 if(fps<100) then
 					self.memory.text = "FPS: "..(avrFps - avrFps%1).."\n".."Mem: "..(system.getInfo("textureMemoryUsed")/1000000).." mb";
+					self.memory:toFront()
 				end
         end
 end

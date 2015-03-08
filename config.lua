@@ -2,18 +2,23 @@ application = {
 	content =
 	{           
 		fps = 60,
-		width = 720,
-		height = 720+300,
-		scale = "zoomStretch",
-		xAlign = "center",
-		yAlign = "center",
-		imageSuffix = 
-		{
-			["@2x"] = 1.5,
-			["@4x"] = 3.0,
-		},
+		width = display.pixelWidth,
+		height = display.pixelHeight,
+		-- width = 720,
+		-- height = 1280,
+		-- scale = "zoomStratch",
+		-- xAlign = "center",
+		-- yAlign = "center",
+		-- imageSuffix = 
+		-- {
+			-- -- [""] = 1.5,
+			-- -- [""] = 3.0,
+			-- -- [""] = 0.375,
+			-- -- [""] = 0.5,
+			-- [""] = display.pixelWidth / display.actualContentWidth,
+		-- },
 --		UIApplicationExitsOnSuspend = false,
-	},
+	},	
 
     --[[
     -- Push notifications
